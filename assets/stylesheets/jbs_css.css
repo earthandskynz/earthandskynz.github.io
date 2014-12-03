@@ -1,0 +1,1981 @@
+/*----------------------------------------
+ * General buttons and things 
+ * -----------------------------------------*/
+
+.jbsForm *
+{
+    box-sizing: border-box;
+}
+
+.jbsForm
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+    .jbsForm table
+    {
+        padding: 0;
+        margin: 0;
+        font-size: 13px;
+    }
+
+td
+{
+    text-align: left;
+}
+
+input[type="checkbox"], input[type="radio"]
+{
+    background: transparent;
+    border: 0;
+}
+
+
+.jbsForm li
+{
+    list-style-type: none;
+}
+
+a.jbsButton
+{
+    text-decoration: none !important;
+    color: white !important;
+    margin: 2px 0 2px 0;
+    display: inline-block;
+    padding: 4px 14px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #BBB;
+    border-bottom-color: #A2A2A2;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border-color: #0044af #0044af #002a80;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    background-color: #0066cc;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044af));
+    background-image: -webkit-linear-gradient(top, #0088cc, #0044af);
+    background-image: -o-linear-gradient(top, #0088cc, #0044af);
+    background-image: linear-gradient(to bottom, #0088cc, #0044af);
+    background-image: -moz-linear-gradient(top, #0088cc, #0044af);
+    background-image: -ms-linear-gradient(top, #0088cc, #0044af);
+}
+
+    a.jbsButton:hover
+    {
+        text-decoration: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        background-color: #0044af;
+        background-image: linear-gradient(top, #0044af, #0044af);
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0044af), to(#0044af));
+        background-image: -webkit-linear-gradient(top, #0044af, #0044af);
+        background-image: -o-linear-gradient(top, #0044af, #0044af);
+        background-image: linear-gradient(to bottom, #0044af, #0044af);
+        background-image: -moz-linear-gradient(top, #0044af, #0044af);
+        background-image: -ms-linear-gradient(top, #0044af, #0044af);
+    }
+
+    a.aspNetDisabled,
+    a.aspNetDisabled:hover,
+    a.jbsButton[disabled],
+    a.jbsButton[disabled]:hover,
+    a.jbsButton[disabled]:active
+    {
+        cursor: default;
+        background-image: none;
+        opacity: 0.50;
+        filter: alpha(opacity=50);
+        text-decoration: none;
+        background-color: #0088cc;
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044af));
+        background-image: -webkit-linear-gradient(top, #0088cc, #0044af);
+        background-image: -o-linear-gradient(top, #0088cc, #0044af);
+        background-image: linear-gradient(to bottom, #0088cc, #0044af);
+        background-image: -moz-linear-gradient(top, #0088cc, #0044af);
+        background-image: -ms-linear-gradient(top, #0088cc, #0044af);
+    }
+
+.jbsAddtoCart
+{
+    float: right;
+}
+
+.jbsErrorBox
+{
+    background: rgba(255,100,100,0.3);
+    border: 2px solid rgba(255,100,100,0.8);
+    background-image: url('jbs_img/error-icon.png');
+    /*background-position: 5px;*/
+    line-height: 30px;
+    min-height: 30px;
+}
+
+.jbsie8 .jbsErrorBox,
+.jbsie8 .jbsErrorBox span.jbsGrpBookingExceeded
+{
+    background-image: none;
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 0;
+}
+
+.jbsie8 .jbsAlert
+{
+    filter: none;
+}
+
+
+.jbsThankYouBox
+{
+    background: rgba(180, 255, 180, 0.2);
+    border: 2px solid rgba(100, 235, 130, 0.7);
+    background-image: url('jbs_img/Thank-You-icon.png');
+    background-position: 5px 13px;
+    line-height: 30px;
+    min-height: 30px;
+}
+
+.jbsInfoBox
+{
+    background: rgba(0, 70, 255, 0.2);
+    border: 2px solid rgba(0, 70, 255, 0.7);
+    background-image: url('jbs_img/info-icon_40x40.png');
+    background-position: 5px 8px;
+    min-height: 55px;
+}
+
+    .jbsErrorBox:empty,
+    .jbsThankYouBox:empty,
+    .jbsInfoBox:empty
+    {
+        display: none;
+    }
+
+.jbsErrorBox,
+.jbsThankYouBox,
+.jbsInfoBox
+{
+    display: block;
+    border-radius: 3px;
+    -moz-background-size: 40px;
+    -o-background-size: 40px;
+    -webkit-background-size: 40px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    padding: 10px 10px 10px 60px;
+}
+
+    .jbsThankYouBox h1
+    {
+        color: black;
+        margin: 0;
+        background: none;
+        border: 0;
+        padding: 0;
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .jbsErrorBox span,
+    .jbsThankYouBox span,
+    .jbsInfoBox span
+    {
+        color: black;
+        font-size: 16px;
+    }
+
+    .jbsInfoBox,
+    .jbsInfoBox > span > *,
+    .jbsInfoBox > span > font > *
+    {
+        font-size: 14px;
+        line-height: 16px;
+        color: black;
+        margin-top: 10px;
+    }
+
+        .jbsInfoBox > span > *:first-child,
+        .jbsInfoBox > span > font > *:first-child
+        {
+            margin-top: 0;
+        }
+
+        .jbsInfoBox li
+        {
+            list-style-type: circle;
+            margin: 5px 0 0 30px;
+        }
+
+/*.jbsCallout
+ * {
+ * 	background-color: #6FC4E9;
+ * 		-moz-border-radius: 8px;
+ * 			-webkit-border-radius: 8px;
+ * 				border-radius: 8px;
+ * 					color: #000000;
+ * 						padding: 20px;
+ * 						}*/
+
+.jbsForm div div.jbsInfoBox
+{
+    margin: 10px 0;
+}
+
+.jbsTourDesc
+{
+    background-color: #006396;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    color: #CCCCCC;
+    padding-left: 20px;
+}
+
+.jbsButton:active
+{
+    position: relative;
+    top: 1px;
+}
+
+div.jbsSelect select
+{
+    position: relative;
+    /*top: -10px;*/
+    padding: 3px;
+}
+
+#jbsCartButtons, #jbsCartButtons li
+{
+    list-style: none;
+    background: none;
+    background-image: none;
+    background: url("/images/bg-lxi.png") no-repeat left 0.4em;
+    padding: 0 0 0 0px;
+    color: White;
+    list-style-position: inside;
+}
+
+.jbsForm div
+{
+    margin-top: 10px;
+}
+
+    .jbsForm div div
+    {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+.jbsForm input,
+.jbsForm select,
+.jbsForm text-area
+{
+    border: 1px solid #7F9DB9;
+    background: #F7F8FA;
+    border-style: inset;
+    padding: 3px 2px;
+    color: black;
+    min-width: 43px;
+    width: auto;
+    margin: 0;
+}
+
+.jbsForm input
+{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+    .jbsForm input:disabled
+    {
+        background-color: #DDDDDD;
+    }
+
+.jbsTourHeader
+{
+    font-size: 16px;
+}
+
+.jbsLabel
+{
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    text-align: left;
+}
+
+.giftVoucherTour
+{
+    font-size: 18px;
+}
+
+.jbsDeparting table,
+.jbseoCalendar
+{
+    border: inset 1px #7F9DB9;
+    background: #F7F8FA;
+    display: table;
+}
+
+    .jbsDeparting td,
+    .jbseoCalendar td
+    {
+        padding: 1px !important;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .jbsDeparting input,
+    .jbseoCalendar input
+    {
+        border: 0;
+        padding: 0 4px;
+        margin: 0;
+        vertical-align: bottom;
+    }
+
+    .jbsDeparting img,
+    .jbseoCalendar img
+    {
+        display: table-cell;
+        margin: 1px;
+    }
+
+a.eo_calendar_style1_title_button
+{
+    padding: 4px 4px;
+    margin: 2px;
+    min-width: 15px;
+}
+
+#Body_BodyContent_JBSPage1_ctl01_gridPackages > tbody > tr.jbsTabHeaderBar
+{
+    display: none;
+}
+
+.jbsTabHeaderBarNames
+{
+    display: none;
+}
+
+table.jrsHideHeader tr.jbsTabHeaderBar
+{
+	display:none;
+}
+
+/*----------------------------------------
+ * Calendar 
+ * -----------------------------------------*/
+/* Calendar Display */
+
+.jbscal
+{
+    background-color: White;
+    font-size: 8pt;
+    border-color: #3366CC;
+    border-width: 0px;
+    font-family: Verdana;
+    color: #FFFFFF;
+}
+
+.undefined
+{
+    color: #666666;
+    font-size: 15px;
+}
+
+.jbscalSelected
+{
+    color: #CCFF99;
+    background-color: #009999;
+    font-weight: bold;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+}
+
+.jbscalToday
+{
+    color: White;
+    background-color: #99CCCC;
+}
+
+.jbscalSelector
+{
+    color: #336666;
+    background-color: #99CCCC;
+}
+
+.jbscalWeekendDay
+{
+    background-color: #CCCCFF;
+}
+
+.jbscalOtherMonthDay
+{
+    color: #999999;
+    background-color: Silver;
+}
+
+.jbscalDayHeader
+{
+    color: #003399;
+    background-color: #FFFFFF;
+    font-weight: bold;
+    font-size: 10pt;
+    border-bottom: 1px solid #000000;
+}
+
+.jbscalTitle
+{
+    color: #FFFFFF;
+    background-color: Silver;
+    font-weight: bold;
+    border-color: Blue;
+    border-width: 1px;
+    outline-color: Blue !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.jbscalNotSelectable
+{
+    color: #888;
+    background-color: #DDD;
+    padding: 1px;
+}
+
+
+.jbscalStyle
+{
+    width: 125px;
+    padding-bottom: 5px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+    .jbscalStyle td:first-Child
+    {
+        width: auto;
+    }
+
+#eo_root > div > div
+{
+    width: 339px;
+}
+
+#eo_root table
+{
+    width: 100%;
+    font-size: 13px;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.jbsIframe
+{
+    width: 100%;
+    overflow: auto;
+    height: 600px;
+}
+
+/*****************************************************************/
+
+.jbslstCountries
+{
+    width: 150px;
+}
+
+.jbslstGender
+{
+    width: 100px;
+}
+
+input.jbstxtPaxFirstName
+{
+    width: 90px;
+}
+
+input.jbstxtPaxSurname
+{
+    width: 90px;
+}
+
+.jbsRowGroupHeaderPackages .jbscalStyle
+{
+    float: right;
+}
+
+.jbsRowPackageGroupHeaderHide
+{
+    visibility: collapse;
+}
+
+.jbsRowItemPackagesAlt a,
+.jbsRowItemPackages a,
+.rowItemPackagesSelected a
+{
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.jbsRowGroupHeaderPackages
+{
+    background-color: #178FD2;
+    color: #FFFFFF;
+}
+
+.jbsPackageGroupAlert
+{
+    color: Orange;
+    display: block;
+}
+
+.jbsRowItemPackagesSelected td
+{
+    color: Black;
+}
+
+.jbsPackageOptions
+{
+    width: 100%;
+}
+
+    .jbsPackageOptions td
+    {
+        background-color: #aaa;
+        border-top: 1px solid white;
+    }
+
+.jbsRowItemPackages td, .jbsRowItemPackagesAlt td
+{
+    padding: 7px 0 7px 0;
+}
+
+.jbsRowItemPackages
+{
+    background-color: #ffffff;
+    color: #888888;
+    margin: 5px 0 5px 0; /*font-weight: bold;*/
+}
+
+.jbsRowItemPackagesAlt
+{
+    background-color: #eeeeee;
+    color: #888888;
+    margin: 5px 0 5px 0; /*font-weight: bold;*/
+}
+
+.jbsRowItemPackages
+{
+    background-color: #e4e4e4;
+    color: #888888;
+    margin: 5px 0 5px 0; /*font-weight: bold;*/
+}
+
+.jbsRowGroupHeaderPackages .calStyle
+{
+    float: right;
+}
+
+.jbsGeneralOptionsHeader
+{
+    color: #004F99;
+    background-color: #4BC5E1;
+}
+
+.jbsOptionsLine
+{
+    font-style: italic;
+}
+
+.jbscalDayStyle
+{
+    text-align: center;
+    cursor: pointer;
+    padding: 1px;
+    background-color: transparent;
+    color: black;
+}
+
+.jbscalCalendar td
+{
+    text-align: center;
+    height: 16px;
+}
+
+.jbscalCalendar
+{
+    border: 1px solid #000000;
+}
+
+.jbscalTitle
+{
+    background-color: #178FD2;
+}
+
+    .jbscalTitle td
+    {
+        color: white;
+    }
+
+.jbscalMonth
+{
+    background: #FFFFFF;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+
+tr td:first-child > .jbscalMonth
+{
+    border-left: 1px solid #000000;
+}
+
+.jbscalDayHover
+{
+    background-color: #99CCCC;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.jbsPrompt, .jbsDisplayNotes
+{
+    font-size: smaller;
+    color: Gray;
+    margin-left: 1px;
+    font-weight: bold;
+}
+
+.jbsFarePrompt
+{
+    display: block;
+}
+
+#xJBSPage1_JBSTourBooking1_eodpTourDate,
+#xJBSPage1_JBSExpressBooking1_eodpDateDepart,
+#xJBSPage1_JBSExpressBooking1_eodpDateReturn
+{
+    position: relative;
+    width: 100px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.jbsCheckoutDate
+{
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 100px;
+}
+
+#JBSPage1_JBSAccomFixedBooking1_lblCheckOutDate
+{
+    width: 100px;
+    padding: 3px 3px 3px 3px;
+    color: #666666;
+}
+/*------------------------------------------
+ * Fares table
+ * --------------------------------------------*/
+
+.jbsGrid
+{
+    width: 100%;
+    padding: 0 0 0 0;
+    border: 0;
+}
+
+.jbsCartDepartCol,
+.jbsCartTourNameCol,
+.jbsCartItemAmt,
+.jbsCartButtonCol
+{
+    vertical-align: top;
+}
+
+.jbsTabHeaderBar
+{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+    .jbsTabHeaderBar td:first-child, .jbsTabHeaderBar th:first-child, .jbsFaresRoomHeader td:first-child
+    {
+        padding-left: 0;
+    }
+
+    .jbsTabHeaderBar th
+    {
+        padding-top: 15px;
+        padding-left: 8px;
+        padding-right: 10px;
+        text-align: left;
+    }
+
+.jbsTabFareColumn
+{
+    width: 70%;
+}
+
+.jbsTabFooterBar, .jbsCartHeader, .jbsCartFooter
+{
+    font-weight: bold;
+    background-color: #dddddd;
+    margin-left: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+    .jbsTabFooterBar td, .jbsCartHeader td, .jbsCartFooter td
+    {
+        padding: 10px 10px 10px 10px;
+    }
+
+.jbsFaresTotalAmount
+{
+    text-align: right;
+}
+
+.jbsFareLine
+{
+}
+
+.jbsFareOptionLine
+{
+}
+
+.jbsItem
+{
+}
+
+.jbsGrid td
+{
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 0;
+}
+
+.jbsgrpPaxDob td
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+td.jbsRouteRadioButtonColumn
+{
+    border: 1px solid grey;
+    border-right: 0;
+}
+
+td.jbsRouteTextColumn
+{
+    border: 1px solid grey;
+    border-left: 0;
+    text-align: left !important;
+}
+
+.jbsTabAmtItem
+{
+    text-align: right;
+}
+
+.jbsFaresFareTypeRow .jbsPrompt
+{
+    display: block;
+}
+
+/*------------------------------------------
+ * Package
+ * -------------------------------------------*/
+.jbsPkgEventDate
+{
+    /*width: 110px; 	float: right;*/
+}
+
+    .jbsPkgEventDate .calendarIconEnabled
+    {
+        display: inline-block;
+    }
+
+.jbsRowGroupHeaderPackages #pkgEventName
+{
+    padding-left: 0;
+}
+
+.jbsRowHeaderPackages
+{
+    display: none;
+}
+
+td .jbsPkgPickup,
+td .jbsPkgDropoff
+{
+    margin-top: 0;
+}
+
+div.jbsPkgPickup select,
+div.jbsPkgDropoff select
+{
+    width: 250px;
+}
+
+.jbsRowGroupHeaderPackages #pkgEventName span
+{
+    vertical-align: bottom;
+}
+
+.jbsRowGroupHeaderPackages td
+{
+    padding-top: 10px;
+}
+
+#JBSPage1_JBSPackageBooking1_gridPackages .jbsTabHeaderBar
+{
+    visibility: collapse;
+}
+
+/*------------------------------------------
+ * Shopping cart
+ * -------------------------------------------*/
+.jbsCartHeader, jbsCartFooter
+{
+    font-weight: bold;
+    text-align: left;
+}
+
+.jbsCartHeaderAmt, .jbsCartFooterAmt
+{
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+
+.jbsCartItem
+{
+    text-align: left;
+    vertical-align: top;
+}
+
+.jbsCartItemAmt
+{
+    text-align: right;
+    vertical-align: top;
+}
+
+.jbsCartList, .jbsCartList li
+{
+    list-style: none !important;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px !important;
+    font-size: 11px;
+    color: #666;
+    font-weight: normal;
+}
+
+.jbsCartDepartCol span
+{
+    color: black;
+    font-size: 12px;
+}
+
+.jbsSurchargeTable
+{
+    margin-top: 13px;
+    float: right;
+    width: 250px;
+}
+
+    .jbsSurchargeTable td
+    {
+        font-size: small;
+        font-weight: normal;
+    }
+
+.jbsSurchargeTableTotalRow td
+{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.jbsSurchargeAmt
+{
+    text-align: right;
+}
+
+.jbsSurchargeAmtTotal
+{
+    font-weight: bold;
+    font-size: large;
+}
+
+.jbsSurchargeTableTotalLabel
+{
+    float: left;
+    width: 150px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.jbsPanel div
+{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+    .jbsPanel div div
+    {
+        margin-left: 0px;
+    }
+
+.jbsPanel fieldset legend
+{
+    font-weight: bold;
+}
+
+.jbsPadlockImage
+{
+    float: left;
+    background-image: url('jbs_img/padlock.png');
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 1px;
+    margin-bottom: 20px;
+}
+
+#lblPadlock
+{
+    margin: 9px 0 0 10px;
+}
+
+.jbsCCVImage
+{
+    height: 149px;
+    width: 328px;
+    background-image: url('jbs_img/ccv.gif');
+    float: none;
+    position: relative;
+    left: 150px;
+}
+
+#clearFloat1, #clearFloat2, #clearFloat3, #clearFloat4
+{
+    clear: both;
+}
+
+.jbsCCVImageSmall
+{
+    height: 24px;
+    width: 66px;
+    background: url('jbs_img/CCVsmall.gif') 100% 100%;
+    float: left;
+    margin: 2px 5px !important;
+}
+
+.jbsCCImageSmallX
+{
+    height: 30px;
+    width: 120px;
+    background-image: url('jbs_img/VisaMCAmexDinersJCB.jpg');
+    float: left;
+    margin-top: -5px;
+}
+
+.jbsCCImageVisa,
+.jbsCCImageMasterCard,
+.jbsCCImageAmex,
+.jbsCCImageDiners,
+.jbsCCImageJCB,
+.jbsCCImageDiscover
+{
+    height: 26px;
+    width: 38px;
+    float: left;
+    margin-top: 0px;
+}
+
+.jbsCCImageVisa
+{
+    background-image: url('jbs_img/visa.png');
+}
+
+.jbsCCImageMasterCard
+{
+    background-image: url('jbs_img/master_card.png');
+}
+
+.jbsCCImageAmex
+{
+    background-image: url('jbs_img/amex.png');
+}
+
+.jbsCCImageDiners
+{
+    background-image: url('jbs_img/diners.png');
+}
+
+.jbsCCImageJCBx
+{
+    background-image: url('jbs_img/JCB.png');
+}
+
+.jbsCCImageDiscoverx
+{
+    background-image: url('jbs_img/discover.png');
+}
+
+.jbsStarF
+{
+    float: left;
+}
+
+.jbsPanelSpacer
+{
+    height: 15px;
+}
+
+a.jbsShopCartEditButton
+{
+    background-image: url('jbs_img/SCEdit.png');
+    width: 30px;
+    height: 25px;
+    float: right;
+    margin-top: -3px;
+}
+
+a.jbsShopCartRemButton
+{
+    background-image: url('jbs_img/SCRem.png');
+    width: 30px;
+    height: 25px;
+    float: right;
+    margin-top: -3px;
+}
+
+td.jbsRouteRadioButtonColumn input
+{
+    width: 40px;
+}
+
+td.jbsRouteRadioButtonColumn
+{
+    background-color: #DDDDDD;
+    width: 40px;
+}
+
+td.jbsRouteTextColumn
+{
+    padding: 0 0 0 10px;
+}
+
+.jbsTabHeaderBar th.jbsFaresPPHead,
+.jbsTableRow td.jbsFaresPPRow,
+.jbsTableRowAlt td.jbsFaresPPRow,
+.jbsTabHeaderBar th.jbsFaresTotalHead,
+.jbsTableRow td.jbsFaresTotalRow,
+.jbsTableRowAlt td.jbsFaresTotalRow,
+.jbsTabHeaderBar td:last-child,
+.jbsTabItem td:last-child
+{
+    text-align: right;
+}
+
+.jbsTabItem > td
+{
+    padding: 8px;
+}
+
+.jbsTableRow,
+.jbsTableRowAlt,
+.jbsTabFooterBar,
+.jbsCartHeader,
+.jbsCartFooter
+{
+    color: black;
+}
+
+.jbsFaresFareTypeHead, .jbsFaresPPHead, .jbsFaresTotalHead
+{
+    font-weight: bold;
+}
+
+#JBSPage1_JBSShoppingCart1_txtCardSecurity
+{
+    width: 40px;
+    float: left;
+    margin-right: 5px;
+}
+
+#JBSPage1_JBSShoppingCart1_txtFirstName,
+#JBSPage1_JBSShoppingCart1_txtLastName,
+#JBSPage1_JBSShoppingCart1_txtEmail,
+#JBSPage1_JBSShoppingCart1_txtContactDetails
+{
+    width: 270px;
+}
+
+#JBSPage1_JBSShoppingCart1_lstCountries
+{
+    width: 277px;
+}
+
+#JBSPage1_JBSShoppingCart1_txtPostCode
+{
+    width: 120px;
+}
+
+.jbsSecureSealFrame
+{
+    width: 220px;
+    height: 50px;
+}
+
+
+    .jbsSecureSealFrame iframe
+    {
+        overflow: hidden;
+        border-style: hidden;
+        width: 220px;
+        height: 80px;
+    }
+
+.lnkbtnSubmitPayment
+{
+    font-size: larger;
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #efc811), color-stop(1, #e4ae0d) );
+    background: -moz-linear-gradient( center top, #efc811 5%, #e4ae0d 100% );
+    background: -ms-linear-gradient(top, #efc811, #e4ae0d);
+    background: linear-gradient( center top, #efc811 5%, #e4ae0d 100% );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efc811', endColorstr='#e4ae0d');
+    color: Black;
+}
+
+    .lnkbtnSubmitPayment:hover
+    {
+        background: #efc811;
+        color: Black;
+    }
+
+    .lnkbtnSubmitPayment[disabled]
+    {
+        font-size: larger;
+        background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #888888), color-stop(1, #dddddd) );
+        background: -moz-linear-gradient( center top, #888888 5%, #dddddd 100% );
+        background: -ms-linear-gradient( top, #888888, #dddddd);
+        background: linear-gradient( center top, #888888 5%, #dddddd 100% );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#888888', endColorstr='#dddddd');
+        color: #777777;
+    }
+
+#JBSPage1_JBSShoppingCart1_gridBookings td
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#JBSPage1_JBSShoppingCart1_txtCardNumber
+{
+    width: 130px;
+    float: left;
+}
+
+#JBSPage1_JBSShoppingCart1_chkTermsAndCond
+{
+    width: 25px;
+}
+
+#JBSPage1_JBSShoppingCart1_btnShowTermsAndConditions
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#thawteseal
+{
+    float: right;
+}
+
+/*------------------------------------------
+ * popups
+ * -------------------------------------------*/
+.jbsPopup
+{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #444444;
+    background: #eeeeee;
+    visibility: hidden;
+    margin: 0 auto;
+    z-index: 1000;
+}
+
+    .jbsPopup div,
+    .jbsPopup input,
+    .jbsPopup a
+    {
+        z-index: 1000;
+    }
+
+.popTerms
+{
+    padding: 0 3px !important;
+    overflow: hidden !important;
+}
+
+.ui-dialog
+{
+    max-width: 80%;
+}
+
+.ui-widget-header,
+.ui-dialog-titlebar-close
+{
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0099D2), color-stop(1, #006396) ) !important;
+    background: -moz-linear-gradient( center top, #0099D2 5%, #006396 100% ) !important;
+    background: -ms-linear-gradient( top, #0099D2, #006396 ) !important;
+    background: linear-gradient( center top, #0099D2 5%, #006396 100% ) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0099D2', endColorstr='#006396') !important;
+    background-color: #0099D2 !important;
+    background-image: none !important;
+    color: white !important;
+}
+
+.ui-state-hover
+{
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006396), color-stop(1, #0099D2) ) !important;
+    background: -moz-linear-gradient( center top, #006396 5%, #0099D2 100% ) !important;
+    background: -ms-linear-gradient(top, #006396, #0099D2) !important;
+    background: linear-gradient( center top, #006396 5%, #0099D2 100% ) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006396', endColorstr='#0099D2') !important;
+    background-color: #006396 !important;
+    border: 1px solid #888 !important;
+}
+
+.ui-icon
+{
+    background-image: url(../../css/ui-lightness/images/ui-icons_ffffff_256x240.png) !important;
+}
+
+div.jbsTermsBackground
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
+    display: none;
+    z-index: 1001;
+}
+
+.popSpecialAssistance
+{
+    padding-right: 3px !important;
+}
+
+/*------------------------------------------
+ * -------------------------------------------*/
+
+#jbsExpiryDateLabel
+{
+    clear: left;
+}
+
+#lblEnlarge
+{
+    position: relative;
+}
+
+
+#lblTermsAndConditions
+{
+    margin: 5px 0 5px 0;
+    padding-top: 10px;
+}
+
+/*------------------------------------------
+ * Update progress
+ * -------------------------------------------*/
+
+.jbsUpdateProgress
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 00%;
+    right: 00%;
+    background: white;
+    opacity: 0.75;
+    -moz-opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+
+.jbsUpdateMessage
+{
+    position: fixed;
+    top: 40%;
+    right: 45%;
+    font-size: xx-large;
+}
+
+.jbsUpdateMessageImage
+{
+    background-image: url(jbs_img/slimbox-loading.gif);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    margin-top: 4px;
+    position: relative;
+    float: left;
+}
+
+/*------------------------------------------*/
+
+.errorField
+{
+    border-width: 1px;
+    border-color: Red !important;
+    color: Red;
+    border-style: solid;
+}
+
+.jbsForm fieldset
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #999999;
+    padding: 5px 15px;
+    margin: 5px 0px 0px 0px;
+}
+
+/* Validator callout */
+
+.ajax__validatorcallout_error_message_cell
+{
+    color: white;
+}
+/* */
+
+.ajax__validatorcallout_error_message_cell, .ajax__validatorcallout_icon_cell, .ajax__validatorcallout_close_button_cell, .ajax__validatorcallout_close_button_cell .ajax__validatorcallout_innerdiv
+{
+    background: linear-gradient(top, #de3137, #bf0007);
+    background: -moz-linear-gradient(top, #de3137, #bf0007);
+    background: -ms-linear-gradient(top, #de3137, #bf0007);
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #de3137), color-stop(1, #bf0007) );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#de3137', endColorstr='#bf0007');
+}
+
+.ajax__validatorcallout_innerdiv div
+{
+    background-color: #bf0007 !important;
+}
+
+.ajax__validatorcallout_callout_arrow_cell_topleftpos
+{
+    padding: 1px 0 0 15px !important;
+}
+
+.ajax__validatorcallout div, .ajax__validatorcallout td
+{
+    border: solid 1px #de3137;
+    background-color: #de3137;
+}
+
+/* */
+
+.jbsTableRowAlt
+{
+    background-color: #e8e8e8;
+}
+
+.jbsTableRow
+{
+    background-color: #f0f0f0;
+}
+
+    .jbsTableRow > td, .jbsTableRowAlt > td
+    {
+        padding: 8px 8px 8px 8px;
+        height: 29px;
+        vertical-align: top;
+    }
+
+.jrsHideHeader tr.jbsTabHeaderBar td
+{
+    color: white;
+    width: 100%;
+}
+
+
+.jbsFaresRoomHeader
+{
+    font-weight: bold;
+}
+
+    .jbsFaresRoomHeader td
+    {
+        padding-left: 8px;
+        padding-right: 10px;
+        padding-top: 15px;
+    }
+
+#JBSPage1_JBSTourBooking1_gridNames
+{
+    margin-top: 20px;
+}
+
+.jbsPaxCountDropList
+{
+    position: relative;
+    top: -1px;
+    font-size: 11px;
+}
+
+
+/*--------------------------------------------------------------
+ * Calendar
+ * ---------------------------------------------------------------*/
+
+
+.cal
+{
+    background-color: White;
+    font-size: 8pt;
+    border-color: #3366CC;
+    border-width: 0px;
+    font-family: Verdana;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+.calSelected
+{
+    color: #CCFF99;
+    background-color: #009999;
+    font-weight: bold;
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+}
+
+.calToday
+{
+    color: White;
+    background-color: #99CCCC;
+}
+
+.calSelector
+{
+    color: #336666;
+    background-color: #99CCCC;
+}
+
+.calWeekendDay
+{
+    background-color: #CCCCFF;
+}
+
+.calOtherMonthDay
+{
+    color: #999999;
+    background-color: Silver;
+}
+
+.calDayHeader
+{
+    color: #003399;
+    background-color: #FFFFFF;
+    font-weight: bold;
+    font-size: 10pt;
+    border-bottom: 1px solid #000000;
+}
+
+.calTitle
+{
+    color: #FFFFFF;
+    background-color: Silver;
+    font-weight: bold;
+    border-color: Blue;
+    border-width: 1px;
+    outline-color: Blue !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.calNotSelectable
+{
+    color: #888;
+    background-color: #DDD;
+    padding: 1px;
+}
+
+.calStyle
+{
+    width: 125px;
+    padding-bottom: 5px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.calDayStyle
+{
+    text-align: center;
+    cursor: pointer;
+    padding: 1px;
+    background-color: transparent;
+}
+
+.calCalendar td
+{
+    text-align: center;
+}
+
+.calCalendar
+{
+    border: 1px solid #000000;
+    width: 336px !important;
+}
+
+.calTitle
+{
+    background-color: #178FD2;
+}
+
+.calMonth
+{
+    background: #FFFFFF;
+}
+
+.calDayHover
+{
+    background-color: #99CCCC;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#eo_root table td
+{
+    padding: 0px;
+    text-align: center;
+}
+
+#_eo_JBSPage1_JBSTourBooking1_eodpTourDate_picker,
+#_eo_JBSPage1_JBSPackageBooking1_eodpTourDate_picker
+{
+    position: relative;
+    z-index: -1;
+}
+
+#_eo_JBSPage1_JBSTourBooking1_eodpTourDate_popupimg,
+#_eo_JBSPage1_JBSPackageBooking1_eodpTourDate_popupimg
+{
+    position: relative;
+    left: 10px;
+}
+
+#JBSPage1_JBSTourBooking1_lnkbtnAddToCart,
+#JBSPage1_JBSAccomFixedBooking1_lnkbtnAddToCart,
+#JBSPage1_JBSExpressBooking1_lnkbtnAddToCart,
+#JBSPage1_JBSPackageBooking1_lnkbtnAddToCart,
+#Body_BodyContent_JBSPage1_ctl01_lnkbtnAddToCart
+{
+    float: right;
+}
+
+#JBSPage1_JBSTourBooking1_lnkbtnShopCart,
+#JBSPage1_JBSAccomFixedBooking1_lnkbtnShopCart,
+#JBSPage1_JBSExpressBooking1_lnkbtnShopCart,
+#JBSPage1_JBSPackageBooking1_lnkbtnShopCart #JBSPage1_JBSPackageBooking1_lnkbtnShopCart,
+#Body_BodyContent_JBSPage1_ctl01_h1ShopCart
+{
+    float: left;
+}
+
+.jbsEquivLocation > fieldset
+{
+    border-style: none;
+    margin-top: -42px;
+    margin-left: 200px;
+    padding-top: 0;
+}
+
+/* CSS Document */
+/* Tour Listing Styles */
+table .jrs-tourlist-table
+{
+    font-size: 11px;
+}
+
+    table .jrs-tourlist-table td
+    {
+    }
+
+.jrs-tour-name
+{
+    font-weight: bold;
+}
+
+
+/* Price Table Styles - used on tour description and tour listing pages */
+
+.tableWrapper table.jrs-price-table
+{
+background:transparent;
+}
+
+.jrs-prices
+{
+}
+
+.jrs-price-table
+{
+    width: 100%;
+    font-size: 11px;
+    border-collapse: collapse;
+}
+
+.jrs-price-fare
+{
+    text-align: left;
+}
+
+.jrs-price-price
+{
+    text-align: right;
+    padding-left: 5px;
+}
+
+/* Availability Table Styles */
+#availabilityFrame
+{
+    width: 100%;
+}
+
+.jrs-avail-scrollButtons
+{
+    width: 100%;
+}
+
+.jrs-avail-scrollForward
+{
+    background: url(jbs_img/calNext.png) no-repeat;
+    height: 32px;
+    width: 32px;
+    border: none;
+    display: inline-block;
+    text-align: right;
+    float: right;
+    color: transparent;
+}
+
+.jrs-avail-scrollBack
+{
+    background: url(jbs_img/calPrev.png) no-repeat;
+    height: 32px;
+    width: 32px;
+    border: none;
+    display: inline-block;
+    text-align: left;
+    float: left;
+    color: transparent;
+}
+
+.jrs-avail-top table
+{
+    margin: 0 auto;
+}
+
+.jrs-availability-table .jrs-price-fare, .jrs-availability-table .jrs-price-price
+{
+    font-size: 1em;
+}
+
+.jrs-availability-table *
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.jrs-availability-table
+{
+    border-collapse: separate !important;
+}
+
+    .jrs-availability-table > tbody > tr > td
+    {
+        border: solid 1px white;
+    }
+
+    .jrs-availability-table > tbody > tr td:first-child
+    {
+        vertical-align: top;
+    }
+
+.jrs-avail-DummyCell
+{
+    display: none;
+}
+
+.jrs-avail-cruise-head
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #0162A7;
+    color: #FFFFFF;
+    padding: 4px;
+}
+
+.jrs-avail-day-cell
+{
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px;
+    font-weight: bold;
+    background-color: #0162A7;
+    color: #FFFFFF;
+}
+
+.jrs-avail-cruise-cell
+{
+    color: red;
+    padding: 4px;
+}
+
+.jrs-avail-detail-cell
+{
+    text-align: center;
+    vertical-align: middle;
+    padding: 4px;
+}
+
+.jrs-avail-noDepart, .not_running
+{
+    background-color: #99CCFF;
+}
+
+.jrs-avail-noAvail, .avail_none
+{
+    background-color: #FF6666;
+}
+
+.jrs-avail-avail, .avail_lots
+{
+    background-color: #66FFCC;
+}
+
+.jrs-avail-availLimited, .avail_few
+{
+    background-color: #FFCC66;
+}
+
+.jrs-avail-detail-cell .jrs-price-table
+{
+    margin-bottom: 4px;
+}
+
+#spinner
+{
+    height: 100%;
+    background: transparent url(/img/indicator.gif) no-repeat center top;
+    font-size: 1.5em;
+}
+
+/* Agent availability page */
+.not_running ul, .avail_lots ul
+{
+    list-style: none;
+    padding: 2px;
+    margin: 0;
+}
+
+.farename
+{
+    text-align: left;
+}
+
+.fareprice
+{
+    text-align: right;
+    padding-left: 5px;
+}
+
+#ctl00_cp1_gridTourAvail td
+{
+    border: 1px solid #000;
+}
+
+    #ctl00_cp1_gridTourAvail td table td
+    {
+        border: none;
+    }
+
+.jrs-Login-Message
+{
+    display: none;
+}
+
+.jbsMailingList input[type="checkbox"]
+{
+    margin-left: -4px;
+    min-width: 22px;
+    width: auto;
+}
+
+
+#lblTermsAndConditions input[type="checkbox"]
+{
+    width: auto;
+    min-width: 0px;
+}
+
+#priceTable
+{
+    margin-top: 15px;
+}
+
+.jbsPanel[name=pnlCustDetails] input,
+.jbsPanel[name=pnlCustDetails] textarea,
+.jbsPanel[name=pnlCustDetails] select,
+#PaymentOptions,
+#txtCardNumber,
+#priceTable,
+#commissionTable
+{
+    width: 225px;
+}
+
+/*-------------
+ * Never want to see the agent menu on the public booking page
+ * --------------*/
+#MenuBar2
+{
+    display: none;
+}
+
+#AgentSiteForm #MenuBar2
+{
+    display: block;
+}
+
+/*-------------
+ *     luggage labels
+ *     ---------------*/
+.jbsLuggageLabel select,
+.jbsLuggageLabel textarea
+{
+    width: 48%;
+    float: left;
+}
+
+.jbsLuggageLabel span
+{
+    display: block;
+}
+
+.jbsMailingList
+{
+    display: none;
+}
+
+.jbsPackageSurchList
+{
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+.jbsShoppingCartRouteDesc
+{
+    font-size: smaller;
+    display: block;
+}
+
+    .jbsShoppingCartRouteDesc span
+    {
+        color: #666666;
+        padding-left: 10px;
+        display: block;
+    }
+
+td.jbsCartDepartCol
+{
+    max-width: 100px;
+}
+
+.jbsCCError
+{
+    line-height: 20px;
+}
+
+span.jbsShoppingCartDateJoin
+{
+    font-size: smaller;
+    color: #666666;
+    margin-left: 15px;
+}
+
+/*************************************************************
+ *     Errors
+ *     *************************************************************/
+
+span.jbsErrText
+{
+    border-style: solid;
+    border-width: 1px;
+    background-color: aliceblue;
+    border-radius: 3px;
+    font-family: Courier;
+    display: block;
+    padding-left: 3px;
+    line-height: 13px;
+    font-size: smaller;
+    background-color: #DDDDDD;
+    color: #222222;
+    padding: 5px;
+}
+
+span.jbsErrTag
+{
+    font-size: smaller;
+    color: grey;
+    text-align: right;
+    display: block;
+}
+
+span.jbsErrSeeMessage:hover .jbsErrText
+{
+    display: block;
+}
+
+span.jbsErrSeeMessage span.jbsErrText
+{
+    display: none;
+}
+
+span.jbsErrSeeMessage
+{
+    color: blue;
+}
+
+    span.jbsErrSeeMessage:hover
+    {
+    color: red;
+}
+
+.placeholder
+{
+    color: #aaa !important;
+}
