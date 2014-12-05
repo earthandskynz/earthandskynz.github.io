@@ -119,7 +119,7 @@ a.jbsButton
 {
     background: rgba(255,100,100,0.3);
     border: 2px solid rgba(255,100,100,0.8);
-    background-image: url('jbs_img/error-icon.png');
+    background-image: url('https://secure.jbs.com.au/earthandsky/app_themes/jbs/jbs_img/error-icon.png');
     /*background-position: 5px;*/
     line-height: 30px;
     min-height: 30px;
@@ -145,7 +145,7 @@ a.jbsButton
 {
     background: rgba(180, 255, 180, 0.2);
     border: 2px solid rgba(100, 235, 130, 0.7);
-    background-image: url('jbs_img/Thank-You-icon.png');
+    background-image: url('https://secure.jbs.com.au/earthandsky/app_themes/jbs/jbs_img/Thank-You-icon.png');
     background-position: 5px 13px;
     line-height: 30px;
     min-height: 30px;
@@ -155,7 +155,7 @@ a.jbsButton
 {
     background: rgba(0, 70, 255, 0.2);
     border: 2px solid rgba(0, 70, 255, 0.7);
-    background-image: url('jbs_img/info-icon_40x40.png');
+    background-image: url('https://secure.jbs.com.au/earthandsky/app_themes/jbs/jbs_img/info-icon_40x40.png');
     background-position: 5px 8px;
     min-height: 55px;
 }
@@ -949,7 +949,7 @@ div.jbsPkgDropoff select
 .jbsPadlockImage
 {
     float: left;
-    background-image: url('jbs_img/padlock.png');
+    background-image: url('https://secure.jbs.com.au/earthandsky/app_themes/jbs/jbs_img/padlock.png');
     width: 32px;
     height: 32px;
     margin-right: 6px;
@@ -966,7 +966,7 @@ div.jbsPkgDropoff select
 {
     height: 149px;
     width: 328px;
-    background-image: url('jbs_img/ccv.gif');
+    background-image: url('https://secure.jbs.com.au/earthandsky/app_themes/jbs/jbs_img/ccv.gif');
     float: none;
     position: relative;
     left: 150px;
@@ -981,7 +981,7 @@ div.jbsPkgDropoff select
 {
     height: 24px;
     width: 66px;
-    background: url('jbs_img/CCVsmall.gif') 100% 100%;
+    background: url('https://secure.jbs.com.au/earthandsky/app_themes/jbs/jbs_img/CCVsmall.gif') 100% 100%;
     float: left;
     margin: 2px 5px !important;
 }
@@ -990,7 +990,7 @@ div.jbsPkgDropoff select
 {
     height: 30px;
     width: 120px;
-    background-image: url('jbs_img/VisaMCAmexDinersJCB.jpg');
+    background-image: url('https://secure.jbs.com.au/earthandsky/app_themes/jbs/jbs_img/VisaMCAmexDinersJCB.jpg');
     float: left;
     margin-top: -5px;
 }
@@ -1010,32 +1010,32 @@ div.jbsPkgDropoff select
 
 .jbsCCImageVisa
 {
-    background-image: url('jbs_img/visa.png');
+    background-image: url('https://secure.jbs.com.au/earthandsky/app_themes/jbs/jbs_img/visa.png');
 }
 
 .jbsCCImageMasterCard
 {
-    background-image: url('jbs_img/master_card.png');
+    background-image: url('https://secure.jbs.com.au/earthandsky/app_themes/jbs/jbs_img/master_card.png');
 }
 
 .jbsCCImageAmex
 {
-    background-image: url('jbs_img/amex.png');
+    background-image: url('https://secure.jbs.com.au/earthandsky/app_themes/jbs/jbs_img/amex.png');
 }
 
 .jbsCCImageDiners
 {
-    background-image: url('jbs_img/diners.png');
+    background-image: url('https://secure.jbs.com.au/earthandsky/app_themes/jbs/jbs_img/diners.png');
 }
 
 .jbsCCImageJCBx
 {
-    background-image: url('jbs_img/JCB.png');
+    background-image: url('https://secure.jbs.com.au/earthandsky/app_themes/jbs/jbs_img/JCB.png');
 }
 
 .jbsCCImageDiscoverx
 {
-    background-image: url('jbs_img/discover.png');
+    background-image: url('https://secure.jbs.com.au/earthandsky/app_themes/jbs/jbs_img/discover.png');
 }
 
 .jbsStarF
@@ -1050,7 +1050,7 @@ div.jbsPkgDropoff select
 
 a.jbsShopCartEditButton
 {
-    background-image: url('jbs_img/SCEdit.png');
+    background-image: url('https://secure.jbs.com.au/earthandsky/app_themes/jbs/jbs_img/SCEdit.png');
     width: 30px;
     height: 25px;
     float: right;
@@ -1059,7 +1059,7 @@ a.jbsShopCartEditButton
 
 a.jbsShopCartRemButton
 {
-    background-image: url('jbs_img/SCRem.png');
+    background-image: url('https://secure.jbs.com.au/earthandsky/app_themes/jbs/jbs_img/SCRem.png');
     width: 30px;
     height: 25px;
     float: right;
@@ -1336,7 +1336,7 @@ div.jbsTermsBackground
 
 .jbsUpdateMessageImage
 {
-    background-image: url(jbs_img/slimbox-loading.gif);
+    background-image: url('https://secure.jbs.com.au/earthandsky/app_themes/jbs/jbs_img/slimbox-loading.gif');
     background-repeat: no-repeat;
     width: 32px;
     height: 32px;
@@ -1673,7 +1673,7 @@ background:transparent;
 
 .jrs-avail-scrollForward
 {
-    background: url(jbs_img/calNext.png) no-repeat;
+    background: url('https://secure.jbs.com.au/earthandsky/app_themes/jbs/jbs_img/calNext.png') no-repeat;
     height: 32px;
     width: 32px;
     border: none;
@@ -1685,7 +1685,7 @@ background:transparent;
 
 .jrs-avail-scrollBack
 {
-    background: url(jbs_img/calPrev.png) no-repeat;
+    background: url('https://secure.jbs.com.au/earthandsky/app_themes/jbs/jbs_img/calPrev.png') no-repeat;
     height: 32px;
     width: 32px;
     border: none;
